@@ -1,0 +1,114 @@
+/*
+
+The designs were created to the following widths:
+
+    - Mobile: 375px
+    - Desktop: 1440px
+
+*/
+
+:root {
+    --tomato: hsl(4, 100%, 67%);
+    --dark-slate-grey: hsl(234, 29%, 20%);
+    --charcoal-grey: hsl(235, 18%, 26%);
+    --grey: hsl(231, 7%, 60%);
+    --white: hsl(0, 0%, 100%);
+
+    --font: 'Roboto', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body{
+    font-family: var(--font);
+    color: var(--charcoal-grey);
+}
+h1, h2 {
+    font-size: 44px;
+    font-weight: 700;
+    margin: 1em .4em;
+}
+.paragraph {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 1.5em 1.5em;
+}
+.imagem-mobile {
+    width: 100vw;
+}
+.content {
+    width: 100vw;
+    margin: auto;
+}
+.list {
+    margin: 1em 1.5em 3em 1.5em;
+}
+.list-iten {
+    margin: 1em auto;
+    text-align: left;
+}
+.icon-list{
+    padding-right: 1em;
+}
+.inputs {
+    margin: auto;
+}
+
+.email-label {
+    position: relative;
+    font-family: var(--font);
+    color: var(--dark-slate-grey);
+    font-weight: 700;
+    font-size: 13px;
+    margin: 1.5em;
+    
+}
+.email-input{
+    width: 88%;
+    height: 50px;
+    border-radius: 10px;
+    margin: 1em 1.5em;
+    border: 1px solid var(--grey);
+}
+
+.email-input::placeholder{
+    font-size: 16px;
+    font-family: var(--font);
+    color: var(--grey);
+    padding-left: 1em;
+
+}
+
+.email-button {
+    font-size: 16px;
+    font-family: var(--font);
+    font-weight: 700;
+    color: var(--white);
+    background-color: var(--dark-slate-grey);
+    border: none;
+    width: 88%;
+    height: 60px;
+    border-radius: 10px;
+    margin: .7em 1.5em 2em 1.5em;
+}
+
+
+
+
+
+
+.hidden {
+    display: none;
+}
+
+.attribution {
+    background-color: var(--charcoal-grey);
+    font-size: 12px; 
+    text-align: center; 
+    color: var(--white);
+    height: 20px;
+}
+.attribution a {
+    color: var(--white);
+    text-decoration: none;
+}
