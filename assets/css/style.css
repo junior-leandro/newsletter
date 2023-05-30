@@ -13,7 +13,6 @@ The designs were created to the following widths:
     --charcoal-grey: hsl(235, 18%, 26%);
     --grey: hsl(231, 7%, 60%);
     --white: hsl(0, 0%, 100%);
-
     --font: 'Roboto', sans-serif;
 }
 
@@ -21,12 +20,12 @@ The designs were created to the following widths:
 
 body{
     font-family: var(--font);
-    color: var(--charcoal-grey);
+    color: var(--dark-slate-grey);
 }
 h1, h2 {
-    font-size: 44px;
+    font-size: 40px;
     font-weight: 700;
-    margin: 1em .4em;
+    margin: 1em .5em;
 }
 .paragraph {
     font-size: 16px;
@@ -63,7 +62,7 @@ h1, h2 {
     margin: 1.5em;
     
 }
-.email-input{
+#email-input{
     width: 88%;
     height: 50px;
     border-radius: 10px;
@@ -71,7 +70,7 @@ h1, h2 {
     border: 1px solid var(--grey);
 }
 
-.email-input::placeholder{
+#email-input::placeholder{
     font-size: 16px;
     font-family: var(--font);
     color: var(--grey);
