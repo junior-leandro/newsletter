@@ -16,37 +16,44 @@
 <body>
 
   <!-- Sign-up form start -->
-  <section class="content">
-    <img src="/assets/images/illustration-sign-up-mobile.svg" class="imagem-mobile">
-    <div class="container">
-        
-      <h1>Stay updated!</h1>
+  <section class="content subscribed-finish">
+    <div class="left-section hidden">
+      <img src="/assets/images/illustration-sign-up-mobile.svg" class="image-mobile">
+      <div class="container">
 
-      <p class="paragraph">Join 60,000+ product managers receiving monthly updates on:</p>
+        <h1>Stay updated!</h1>
 
-      <ul class="list">
-        <li class="list-iten"><img src="/assets/images/icon-list.svg" alt="icone da lista" class="icon-list">Product discovery and building what matters</li>
-        <li class="list-iten"><img src="/assets/images/icon-list.svg" alt="icone da lista" class="icon-list">Measuring to ensure updates are a success</li>
-        <li class="list-iten"><img src="/assets/images/icon-list.svg" alt="icone da lista" class="icon-list">And much more!</li>
-      </ul>
+        <p class="paragraph">Join 60,000+ product managers receiving monthly updates on:</p>
+
+        <ul class="list">
+          <li class="list-iten">Product discovery and building what matters</li>
+          <li class="list-iten">Measuring to ensure updates are a success</li>
+          <li class="list-iten">And much more!</li>
+        </ul>
+      </div>
+      <div class="inputs">
+        <label for="email-input" class="email-label">Email address</label><br>
+        <input type="text" name="email" id="email-input" placeholder="email@company.com"><br>
+        <input type="button" class="email-button button" value="Subscribe to monthly newsletter">
+      </div>
     </div>
-    <div class="inputs">
-      <label for="email-input" class="email-label">Email address</label><br>
-      <input type="text" name="email" id="email-input" placeholder="email@company.com"><br>
-      <input type="button" class="email-button" value="Subscribe to monthly newsletter">
+    <!-- Success message start -->
+
+    <div class="subscribed">
+      <img src="/assets/images/icon-success.svg" class="sucess-icon">
+      <h2>Thanks for subscribing!</h2>
+      <p class="paragraph">A confirmation email has been sent to <span id="email-variable">ash@loremcompany.com</span>.
+        Please open it and click the button inside to confirm your subscription.</p>
+      <button class="dismiss-button button">Dismiss message</button>
     </div>
 
+    <div class="rigth-section">
+      <img src="/assets/images/illustration-sign-up-desktop.svg" class="image-desktop">
+    </div>
   </section>
 
 
-  <!-- Success message start -->
-  <section class="subscribed hidden">
-    <img src="/assets/images/icon-success.svg" alt="sucess icon">
-    <h2>Thanks for subscribing!</h2>
-    <p class="paragraph">A confirmation email has been sent to <span>ash@loremcompany.com.</span>
-      Please open it and click the button inside to confirm your subscription.</p>
-    <button>Dismiss message</button>
-  </section>
+
 
 
 

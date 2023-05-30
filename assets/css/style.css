@@ -18,9 +18,20 @@ The designs were created to the following widths:
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
+
 body{
+    width: 100vw;
+    height: 100vh;
     font-family: var(--font);
     color: var(--dark-slate-grey);
+    background-color: var(--charcoal-grey);
+}
+.content, .subscribed {
+    background-color: var(--white);
+    width: 100vw;
+}
+.image-mobile {
+    width: 100vw;
 }
 h1, h2 {
     font-size: 40px;
@@ -30,27 +41,23 @@ h1, h2 {
 .paragraph {
     font-size: 16px;
     font-weight: 400;
-    margin: 1.5em 1.5em;
+    margin: 1.5em 1.3em;
+    line-height: 1.5em;
 }
-.imagem-mobile {
-    width: 100vw;
-}
-.content {
-    width: 100vw;
-    margin: auto;
-}
+
+
 .list {
     margin: 1em 1.5em 3em 1.5em;
 }
 .list-iten {
     margin: 1em auto;
-    text-align: left;
 }
-.icon-list{
-    padding-right: 1em;
+.list-iten::before{
+    padding: .6em;
+    content: url('/assets/images/icon-list.svg');
 }
 .inputs {
-    margin: auto;
+    margin: auto .5em;
 }
 
 .email-label {
@@ -64,9 +71,9 @@ h1, h2 {
 }
 #email-input{
     width: 88%;
-    height: 50px;
+    height: 60px;
     border-radius: 10px;
-    margin: 1em 1.5em;
+    margin: 1em 1.3em .3em 1.3em;
     border: 1px solid var(--grey);
 }
 
@@ -78,36 +85,94 @@ h1, h2 {
 
 }
 
-.email-button {
+.button {
     font-size: 16px;
     font-family: var(--font);
     font-weight: 700;
     color: var(--white);
     background-color: var(--dark-slate-grey);
     border: none;
-    width: 88%;
+    margin: 1em;
+    width: 90%;
     height: 60px;
     border-radius: 10px;
-    margin: .7em 1.5em 2em 1.5em;
+}
+
+.sucess-icon{
+    margin: 8em auto auto 1.3em;
+}
+#email-variable {
+    font-weight: 700;
+}
+.dismiss-button {
+    margin: 10em 1.3em;
 }
 
 
-
-
-
+.image-desktop {
+    display: none;
+}
 
 .hidden {
     display: none;
 }
 
 .attribution {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding-top: 1em;
     background-color: var(--charcoal-grey);
-    font-size: 12px; 
+    font-size: 10px; 
     text-align: center; 
     color: var(--white);
-    height: 20px;
+    height: 2em;
+    width: 100%;
 }
 .attribution a {
     color: var(--white);
     text-decoration: none;
+}
+
+@media screen and (min-width: 1280px) {
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .image-mobile {
+        display: none;
+    }
+    .content {
+        width: 65%;
+        display: flex;
+        padding: 1.3em;
+    }
+    .dismiss-button {
+        margin: 2em auto;
+
+    }
+    .subscribed-finish{
+        width: 30vw;
+        height: 30vw;
+        border-radius: 2em;
+
+    }
+    .sucess-icon{
+        margin: auto;
+    }
+    .paragraph{
+        margin: 0;
+    }
+
+
+
+
+    .left-section, .subscribed-finish {
+        padding: 3em;
+    }
+    .image-desktop {
+        /*display: block;*/
+        border-radius: 2em;
+    }
 }
