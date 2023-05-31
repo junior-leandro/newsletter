@@ -1,7 +1,7 @@
 # Frontend Mentor - Newsletter Sign-up Form
 
 
-[Design preview](assets/design/screenshot.jpg)
+![Preview for the Newsletter Sign-up Form](./assets/design/screenshot.jpg)
 
 
 ## Bem vindo!! 👋
