@@ -99,13 +99,13 @@ h1, h2 {
 }
 
 .sucess-icon{
-    margin: 8em auto auto 1.3em;
+    margin: 3em auto auto 1.3em;
 }
 #email-variable {
     font-weight: 700;
 }
 .dismiss-button {
-    margin: 10em 1.3em;
+    margin: 10em 1.3em 5em 1.3em;
 }
 
 
@@ -118,15 +118,12 @@ h1, h2 {
 }
 
 .attribution {
-    position: absolute;
-    bottom: 0;
-    left: 0;
     padding-top: 1em;
     background-color: var(--charcoal-grey);
     font-size: 10px; 
     text-align: center; 
     color: var(--white);
-    height: 2em;
+    max-height: 2em;
     width: 100%;
 }
 .attribution a {
@@ -137,16 +134,36 @@ h1, h2 {
 @media screen and (min-width: 1280px) {
     body {
         display: flex;
+        flex-direction: column;
         justify-content: center;
         align-items: center;
     }
     .image-mobile {
         display: none;
     }
+    .image-desktop {
+        display: block;
+        width: 100%;
+        border-radius: 2em;
+        margin: 1em auto;
+    }
     .content {
-        width: 65%;
+        position: absolute;
+        height: 75vh;
+        width: 55vw;
+        border-radius: 2em;
         display: flex;
         padding: 1.3em;
+        margin: 5em auto;
+    }
+    .list{
+        margin: auto;
+    }
+
+
+    .button, #email-input{
+        height: 40px;
+        font-size: 14px;
     }
     .dismiss-button {
         margin: 2em auto;
@@ -165,14 +182,20 @@ h1, h2 {
         margin: 0;
     }
 
-
-
+    h1 {
+        margin: .3em auto;
+    }
+    h2 {
+        margin: 1em auto;
+    }
 
     .left-section, .subscribed-finish {
         padding: 3em;
     }
-    .image-desktop {
-        /*display: block;*/
-        border-radius: 2em;
+    
+    .attribution-finished {
+        position: absolute;
+        bottom: 10px;
+        left: 0;
     }
 }
