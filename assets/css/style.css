@@ -62,6 +62,8 @@ h1, h2 {
 }
 
 .label-and-error {    
+    width: 90%;
+    padding-left: 1.2em;
     font-family: var(--font);
     font-size: 13px;
     font-weight: 700;
@@ -171,6 +173,11 @@ button:hover{
     }
     .list{
         margin: auto;
+    }
+
+    .label-and-error {    
+        width: 100%;
+        padding-left: 0;
     }
 
 

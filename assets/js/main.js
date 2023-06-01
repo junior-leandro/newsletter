@@ -11,8 +11,9 @@ const isValidEmail = (email) => {
   const section = document.querySelector('.content');
   const leftSection = document.querySelector('.left-section');
   const rigthSection = document.querySelector('.rigth-section');
+  const buttonContinue = document.querySelector('.dismiss-button')
   let isValideForm = false;
-  
+  let emailSpan = document.querySelector('#email-variable');
 
   const validateInput = () =>{
     isValideForm = true;
@@ -20,6 +21,7 @@ const isValidEmail = (email) => {
         input.classList.add("error-border");
         label.classList.remove("hidden");
         isValideForm = false;
+        
 
     }
   }
@@ -31,6 +33,7 @@ const isValidEmail = (email) => {
         leftSection.classList.add('hidden');
         rigthSection.classList.add('hidden');
         section.classList.add('subscribed-finish');
+        emailSpan.textContent = input.value;
         
         console.log ('VAI QUE É TUA TAFAREU');
     }
