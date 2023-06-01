@@ -32,17 +32,22 @@
         </ul>
       </div>
       <div class="inputs">
-        <label for="email-input" class="email-label">Email address</label><br>
-        <input type="text" name="email" id="email-input" placeholder="email@company.com"><br>
-        <input type="button" class="email-button button" value="Subscribe to monthly newsletter">
+        <form>
+          <div class="label-and-error">
+            <label for="email-input" class="email-label">Email address</label> 
+            <span id="error-message" class="hidden">Valid email required</span> <!-- REMOVE ON JS "hidden"-->
+          </div>                                            <!-- ADD ON JS "error-border"-->
+          <input type="text" name="email" id="email-input"  class="email-input" maxlength="40" placeholder="email@company.com"><br>
+          <button class="email-button button" value="Subscribe to monthly newsletter">Subscribe to monthly newsletter</button>
+        </form>
       </div>
     </div>
     <!-- Success message start -->
 
-    <div class="subscribed hidden">  <!-- REMOVE ON JS "hidden"-->
+    <div class="thanks hidden">  <!-- REMOVE ON JS "hidden"-->
       <img src="/assets/images/icon-success.svg" class="sucess-icon">
       <h2>Thanks for subscribing!</h2>
-      <p class="paragraph">A confirmation email has been sent to <span id="email-variable">ash@loremcompany.com</span>.
+      <p class="paragraph">A confirmation email has been sent to <span id="email-variable"></span>.
         Please open it and click the button inside to confirm your subscription.</p>
       <button class="dismiss-button button">Dismiss message</button>
     </div>
@@ -61,6 +66,7 @@
     <p>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
       Coded by <a href="http://junior.dev.br">Junior Oliveira Leandro</a>.</p>
   </div>
+  <script src="/assets/js/main.js"></script>
 </body>
 
 </html>
