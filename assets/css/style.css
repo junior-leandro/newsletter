@@ -108,6 +108,10 @@ h1, h2 {
 }
 button:hover{
     background-color: var(--tomato);
+    cursor: pointer;
+}
+input:hover{
+    cursor: pointer;
 }
 
 .sucess-icon{
@@ -158,13 +162,13 @@ button:hover{
     }
     .image-desktop {
         display: block;
-        width: 100%;
+        height: 500px;
         border-radius: 2em;
         margin: 1em auto;
     }
     .content {
         position: absolute;
-        height: 80vh;
+        height: 530px;
         width: 55vw;
         border-radius: 2em;
         display: flex;
