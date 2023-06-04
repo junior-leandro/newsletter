@@ -84,6 +84,10 @@ h1, h2 {
     padding-left: 1em;
 }
 
+.email-input-error{
+    color: var(--tomato);
+}
+
 .error-border {
     border: 1px solid var(--tomato);
     background-color: var(--tomato-transparent);
@@ -144,6 +148,7 @@ input:hover{
     color: var(--white);
     max-height: 2em;
     width: 100%;
+    height: 100%;
 }
 .attribution a {
     color: var(--white);
@@ -223,10 +228,12 @@ input:hover{
     .left-section, .subscribed-finish {
         padding: 3em;
     }
-    
-    .attribution-finished {
-        position: absolute;
-        bottom: 10px;
+
+    .attribution {
+        position: fixed;
+        bottom: 5px;
         left: 0;
     }
+    
+    
 }

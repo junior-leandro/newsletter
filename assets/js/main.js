@@ -3,6 +3,7 @@ const isValidEmail = (email) => {
       /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
     return regex.test(String(email).toLowerCase())
   }
+  //Uso de REGEX para confirmar o conteudo do input
 
   const form = document.querySelector('form');
   const message = document.querySelector('.thanks');
@@ -18,7 +19,7 @@ const isValidEmail = (email) => {
   const validateInput = () =>{
     isValideForm = true;
     if(!isValidEmail(input.value)){
-        input.classList.add("error-border");
+        input.classList.add("error-border", "email-input-error");
         label.classList.remove("hidden");
         isValideForm = false;
         
@@ -40,7 +41,7 @@ const isValidEmail = (email) => {
   });
 
   input.addEventListener('input', () =>{
-    input.classList.remove("error-border");
+    input.classList.remove("error-border", "email-input-error");
     label.classList.add("hidden");
 
   });
